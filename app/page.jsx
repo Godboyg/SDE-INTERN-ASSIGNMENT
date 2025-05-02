@@ -146,7 +146,7 @@ function App() {
                   <p className='text-black p-2'>{vedio.playedSeconds}</p>
                   <p className='text-cyan-600 font-bold'>Seconds</p>
                  </div>
-                 <p className='text-black p-2 overflow-auto'>{vedio.watched}</p>
+                 <p className='text-black p-2 overflow-auto'>{vedio.watched }</p>
                  </div>
                 </>
               ))
