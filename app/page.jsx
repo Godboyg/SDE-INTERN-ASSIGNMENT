@@ -139,7 +139,7 @@ function App() {
             allVideo.length > 0 ? (
               allVideo.map((vedio)=> (
                 <>
-                  <div className="shadow-xl shadow-gray-600 p-2">
+                  <div className="shadow-xl shadow-gray-600 p-2 mt-5">
                     <p className='text-black p-2'>{vedio.url}</p>
                     <div className="flex items-center justify-center">
                       <p className='text-black p-2'>{vedio.playedSeconds}</p>
