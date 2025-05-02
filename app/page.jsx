@@ -133,7 +133,7 @@ function App() {
       <div className={`fixed max-sm:top-10 bottom-0 left-0 h-screen right-0 rounded-l-md rounded-r-md transform transition-transform duration-400 ${
           visible ? "translate-y-0" : "translate-y-full"
         } bg-white shadow-lg p-4`}>
-        <div className=" w-full rounded-l-md rounded-r-md overflow-auto">
+        <div className="h-screen bg-cyan-700 w-full rounded-l-md rounded-r-md overflow-auto">
           <p onClick={() => setIsVisible(false)} className='text-black p-2 hover:cursor-pointer'>Close</p>
           {
             allVideo.length > 0 ? (
