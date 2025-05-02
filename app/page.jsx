@@ -147,8 +147,8 @@ function App() {
                  </div>
                  <p className='text-black p-2 overflow-auto'>{vedio.watched}</p>
                  </div>
-                 </>
-              ))
+                </>
+                ))
             ) : (
               <p className='p-2'>No Video found!</p>
             )
