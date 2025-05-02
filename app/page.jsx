@@ -137,9 +137,9 @@ function App() {
           <p onClick={() => setIsVisible(false)} className='text-black p-2 hover:cursor-pointer'>Close</p>
           {
             allVideo.length > 0 ? 
-             <div className="overflow-auto h-full">
               allVideo.map((vedio)=> (
                 <>
+                 <div className="overflow-auto h-full max-sm:bg-gray-500">
                  <div className="shadow-xl shadow-gray-600 p-2">
                  <p className='text-black p-2'>{vedio.url}</p>
                  <div className="flex items-center justify-center">
@@ -148,8 +148,8 @@ function App() {
                  </div>
                  <p className='text-black p-2 overflow-auto'>{vedio.watched}</p>
                  </div>
+                 </div>
                 </>
-               </div>
               ))
             ) : (
               <p className='p-2'>No Video found!</p>
