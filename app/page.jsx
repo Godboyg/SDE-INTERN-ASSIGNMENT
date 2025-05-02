@@ -136,9 +136,10 @@ function App() {
         <div className=" w-full rounded-l-md rounded-r-md overflow-auto">
           <p onClick={() => setIsVisible(false)} className='text-black p-2 hover:cursor-pointer'>Close</p>
           {
-            allVideo.length > 0 ? 
+            allVideo.length > 0 ? (
               allVideo.map((vedio)=> (
                 <>
+                  <div className="h-full overflow-auto">
                  <div className="shadow-xl shadow-gray-600 p-2">
                  <p className='text-black p-2'>{vedio.url}</p>
                  <div className="flex items-center justify-center">
@@ -146,6 +147,7 @@ function App() {
                   <p className='text-cyan-600 font-bold'>Seconds</p>
                  </div>
                  <p className='text-black p-2 overflow-auto'>{vedio.watched}</p>
+                 </div>
                  </div>
                 </>
                 ))
