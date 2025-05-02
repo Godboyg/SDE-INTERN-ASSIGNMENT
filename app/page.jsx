@@ -130,13 +130,14 @@ function App() {
       <div className="absolute top-10 max-sm:right-5 right-20 bg-cyan-500 text-black rounded-md">
         <button className='h-full w-full hover:cursor-pointer p-2' onClick={() => setIsVisible(true)}>All Video</button>
       </div>
-      <div className={`fixed max-sm:top-10 max-sm:bg-gray-400 bottom-0 left-0 h-screen right-0 rounded-l-md rounded-r-md transform transition-transform duration-400 ${
+      <div className={`fixed max-sm:top-10 bottom-0 left-0 h-screen right-0 rounded-l-md rounded-r-md transform transition-transform duration-400 ${
           visible ? "translate-y-0" : "translate-y-full"
         } bg-white shadow-lg p-4`}>
         <div className=" w-full rounded-l-md rounded-r-md overflow-auto">
           <p onClick={() => setIsVisible(false)} className='text-black p-2 hover:cursor-pointer'>Close</p>
           {
-            allVideo.length > 0 ? (
+            allVideo.length > 0 ? 
+             <div className="overflow-auto h-full">
               allVideo.map((vedio)=> (
                 <>
                  <div className="shadow-xl shadow-gray-600 p-2">
@@ -148,6 +149,7 @@ function App() {
                  <p className='text-black p-2 overflow-auto'>{vedio.watched}</p>
                  </div>
                 </>
+               </div>
               ))
             ) : (
               <p className='p-2'>No Video found!</p>
